@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Redmine進捗率を見やすくする</title>
+  </head>
+  <body>
+    <p>以下のリンクをお気に入りバーへドラッグ＆ドロップしてください。</p>
+    <ul>
+      <li>
+	<a href="javascript:$('.closed').each(function(){$(this).text($(this).attr('title'));})" onclick="return false;">進捗率を見やすくする</a>
+      </li>
+      <li>
+	<a href="javascript:$('.closed').each(function(){$(this).text($(this).get(0).style.width);})" onclick="return false;">進捗率を見やすくする</a>（旧バージョン用・上記で動かない場合はこちら）
+      </li>
+    </ul>
+    <p>Redmineのチケット一覧を開いて、お気に入りバーの「進捗率を見やすくする」を実行してください。</p>
+  </body>
+</html>
